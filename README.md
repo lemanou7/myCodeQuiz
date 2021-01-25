@@ -47,11 +47,13 @@ You can use any code editor of user choise, i use Vs Code because it is open sou
 
 ### See Game Screenshots
 
-5. Full Webpage 
+5. Full Quiz Webpage 
 
-![image-fullpage](./assets/img/mainpage.JPG)
+![fullpage-image](./assets/img/mainpage.JPG)
+
 
 5. Quiz page
+
 
 ![Quiz-image](./assets/img/gamepage.JPG)
 
