@@ -49,13 +49,13 @@ You can use any code editor of user choise, i use Vs Code because it is open sou
 
 5. Full Quiz Webpage 
 
-![fullpage-image](./assets/img/mainpage.JPG)
+![fullpage-image](./assets/img/mainpage.PNG)
 
 
 5. Quiz page
 
 
-![Quiz-image](./assets/img/gamepage.JPG)
+![Quiz-image](./assets/img/gamepage.PNG)
 
 
 
