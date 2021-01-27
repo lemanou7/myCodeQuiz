@@ -48,6 +48,7 @@ const gaugeWidth = 150; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
+let highterScore = document.getElementById("showLastScore");
 
 
 
@@ -100,6 +101,7 @@ function renderCounter(){
             // end the quiz and show the score
             clearInterval(TIMER);
             scoreRender();
+
         }
     }
 }
@@ -146,7 +148,8 @@ function scoreRender(){
     
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
-            
+    highterScore.innerText= scorePerCent;
+
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 80) ? "assets/img/5.png" :
               (scorePerCent >= 60) ? "assets/img/4.png" :
@@ -156,11 +159,15 @@ function scoreRender(){
     
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+
+    localStorage.setItem("scorePerCent", JSON.stringify(scorePerCent));
     
+
 }
 
+highterScore.innerText = JSON.parse(localStorage.getItem("scorePerCent"));
 
-
+console.log(JSON.parse(localStorage.getItem("scorePerCent")));
 
 
 
